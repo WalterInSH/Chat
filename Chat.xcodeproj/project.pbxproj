@@ -168,6 +168,7 @@
 				TargetAttributes = {
 					4B547C601A2ADDB50081A3E3 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = G67VX53ZZ4;
 					};
 					4B547C791A2ADDB50081A3E3 = {
 						CreatedOnToolsVersion = 6.1;
@@ -412,6 +413,7 @@
 				4B547C861A2ADDB50081A3E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B547C871A2ADDB50081A3E3 /* Build configuration list for PBXNativeTarget "ChatTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +422,7 @@
 				4B547C891A2ADDB50081A3E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
