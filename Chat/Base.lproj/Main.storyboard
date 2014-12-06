@@ -133,6 +133,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="register:" destination="pIq-f1-xQE" eventType="touchUpInside" id="mec-P5-dGZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Oz-Ez-JRH">
                                 <rect key="frame" x="179" y="286" width="75" height="37"/>
@@ -147,12 +150,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <connections>
                             <action selector="backgroundTap:" destination="pIq-f1-xQE" eventType="touchDown" id="U9l-E6-Q3i"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordText" destination="TqO-f7-Rxp" id="Fyl-8i-nlS"/>
+                        <outlet property="passwordText" destination="4RF-vE-xBx" id="e0b-yK-Qiz"/>
+                        <outlet property="phoneText" destination="Vz1-jA-53p" id="ocQ-g9-HHs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4p-pS-Ix8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="i9F-wa-Bdi"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="CCo-rD-nlR"/>
             </objects>
             <point key="canvasLocation" x="659" y="287"/>
         </scene>

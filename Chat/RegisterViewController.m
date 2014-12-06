@@ -15,4 +15,13 @@
 @implementation RegisterViewController
 
 
+- (IBAction)register:(UIButton *)sender {
+    NSString *phone = [_phoneText text];
+    NSString *password = [_passwordText text];
+    NSString *confirmPassword = [_confirmPasswordText text];
+    
+    NSLog(@"%@",phone);
+    NSLog(@"%@",password);
+    NSLog(@"%@",confirmPassword);
+}
 @end

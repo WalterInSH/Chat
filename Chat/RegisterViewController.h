@@ -9,5 +9,11 @@
 #import "WISViewController.h"
 
 @interface RegisterViewController : WISViewController
+@property (weak, nonatomic) IBOutlet UITextField *phoneText;
+@property (weak, nonatomic) IBOutlet UITextField *passwordText;
+@property (weak, nonatomic) IBOutlet UITextField *confirmPasswordText;
+
+
+- (IBAction)register:(UIButton *)sender;
 
 @end
