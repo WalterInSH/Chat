@@ -9,6 +9,10 @@
 #import "WISViewController.h"
 
 @interface LoginViewController : WISViewController
+@property (weak, nonatomic) IBOutlet UITextField *phoneText;
+@property (weak, nonatomic) IBOutlet UITextField *passwordText;
+
+- (IBAction)login:(UIButton *)sender;
 
 @end
 

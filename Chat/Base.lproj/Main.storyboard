@@ -51,6 +51,9 @@
                                 <state key="normal" title="登录">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bun-65-jLw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="961-bE-31p">
                                 <rect key="frame" x="169" y="307" width="75" height="37"/>
@@ -69,6 +72,10 @@
                             <action selector="backgroundTap:" destination="vXZ-lx-hvc" eventType="touchDown" id="anM-An-W78"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="passwordText" destination="iSb-qw-QN0" id="OWz-CM-sUB"/>
+                        <outlet property="phoneText" destination="EFw-Bx-3Lw" id="odl-hy-RJB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

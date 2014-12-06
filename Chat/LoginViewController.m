@@ -14,4 +14,12 @@
 
 @implementation LoginViewController
 
+- (IBAction)login:(UIButton *)sender {
+    NSString *phone = [_phoneText text];
+    NSString *password = [_passwordText text];
+    
+    NSLog(@"%@",phone);
+    NSLog(@"%@",password);
+}
+
 @end
