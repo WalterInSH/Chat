@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MHTextField.h"
 
 @interface WISViewController : UIViewController
 
