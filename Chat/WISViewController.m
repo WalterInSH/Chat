@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  WISViewController.m
 //  Chat
 //
-//  Created by WalterInSH on 11/30/14.
+//  Created by WalterInSH on 12/6/14.
 //  Copyright (c) 2014 WalterInSH. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WISViewController.h"
 
-@interface ViewController ()
+@interface WISViewController ()
 
 @end
 
-@implementation ViewController
+@implementation WISViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,5 +27,4 @@
 - (IBAction)backgroundTap:(id)sender{
     [self.view endEditing:YES];
 }
-
 @end
