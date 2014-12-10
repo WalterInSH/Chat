@@ -20,8 +20,19 @@
     NSString *password = [_passwordText text];
     NSString *confirmPassword = [_confirmPasswordText text];
     
-    NSLog(@"%@",phone);
-    NSLog(@"%@",password);
-    NSLog(@"%@",confirmPassword);
+    if ([phone length] == 0 || [password length] == 0 || [confirmPassword length] == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"注册失败" message:@"信息不完整" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    if(![password isEqualToString: confirmPassword]){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"注册失败" message:@"两次密码输入不一致" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil];
+        [alert show];
+        [_passwordText setText:@""];
+        [_passwordText becomeFirstResponder];
+        [_confirmPasswordText setText:@""];
+        return;
+    }
 }
 @end

@@ -18,8 +18,13 @@
     NSString *phone = [_phoneText text];
     NSString *password = [_passwordText text];
     
-    NSLog(@"%@",phone);
-    NSLog(@"%@",password);
+    if ([phone length] == 0 || [password length] == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"登陆失败" message:@"信息不完整" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    //TODO login
 }
 
 @end
