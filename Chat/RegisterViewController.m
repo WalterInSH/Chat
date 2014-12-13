@@ -14,6 +14,10 @@
 
 @implementation RegisterViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
 
 - (IBAction)register:(UIButton *)sender {
     NSString *phone = [_phoneText text];
