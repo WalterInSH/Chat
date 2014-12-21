@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "FriendListController.h"
 
 @interface LoginViewController ()
 
@@ -17,15 +18,20 @@
 - (IBAction)login:(UIButton *)sender {
     NSString *phone = [_phoneText text];
     NSString *password = [_passwordText text];
-    
+
     if ([phone length] == 0 || [password length] == 0) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"登陆失败" message:@"信息不完整" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"登陆失败" message:@"信息不完整" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil];
         [alert show];
         return;
     }
-    
-    
+
+
     //TODO login
+
+    //Skip to friend list
+    FriendListController *flc = (FriendListController *)[self.storyboard instantiateViewControllerWithIdentifier:@"friendListController"];
+    flc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:flc animated:YES completion:nil];
 }
 
 @end
