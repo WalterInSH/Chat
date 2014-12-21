@@ -13,6 +13,6 @@
 @end
 
 @interface Friend :NSObject
-@property (assign, nonatomic) NSInteger *userId;
+@property (assign, nonatomic) int userId;
 @property (strong, nonatomic) NSString *name;
 @end
