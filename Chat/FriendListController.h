@@ -9,10 +9,4 @@
 
 @interface FriendListController : WISViewController<UITableViewDataSource,UITableViewDelegate>{
 }
-@property (nonatomic, readonly) NSMutableArray *friends;
-@end
-
-@interface Friend :NSObject
-@property (assign, nonatomic) int userId;
-@property (strong, nonatomic) NSString *name;
 @end

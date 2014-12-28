@@ -8,10 +8,7 @@
 
 #import "LoginViewController.h"
 #import "FriendListController.h"
-
-@interface LoginViewController ()
-
-@end
+#import "FriendManager.h"
 
 @implementation LoginViewController
 
@@ -27,6 +24,9 @@
 
 
     //TODO login
+
+    //Load friends
+    [FriendManager loadFriendsFromServer];
 
     //Skip to friend list
     FriendListController *flc = (FriendListController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabBarController"];
