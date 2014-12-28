@@ -10,7 +10,16 @@
 #import "FriendListController.h"
 #import "FriendManager.h"
 
-@implementation LoginViewController
+@implementation LoginViewController{
+@private FriendManager *friendManager;
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    friendManager = [[FriendManager alloc] init];
+}
+
 
 - (IBAction)login:(UIButton *)sender {
     NSString *phone = [_phoneText text];
@@ -26,7 +35,7 @@
     //TODO login
 
     //Load friends
-    [FriendManager loadFriendsFromServer];
+    [friendManager loadFriendsFromServer];
 
     //Skip to friend list
     FriendListController *flc = (FriendListController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabBarController"];

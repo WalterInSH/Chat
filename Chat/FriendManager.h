@@ -9,9 +9,9 @@
 
 @interface FriendManager : NSObject
 
-+(void) loadFriendsFromServer;
+- (void)loadFriendsFromServer;
 
-+(NSMutableArray *) getFriends;
+- (NSMutableArray *)getFriends;
 
-+ (NSUInteger)friendCount;
+- (NSUInteger)friendCount;
 @end

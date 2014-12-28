@@ -6,16 +6,17 @@
 #import "FriendManager.h"
 #import "Friend.h"
 
-@implementation FriendManager {
-}
+@implementation FriendManager
 
-static NSMutableArray *allFriends;
+static const NSMutableArray *allFriends;
 
-+(void)initialize {
++ (void)initialize {
+    [super initialize];
     allFriends = [[NSMutableArray alloc] init];
 }
 
-+ (void)loadFriendsFromServer {
+
+- (void)loadFriendsFromServer {
     NSString *dataJson = @"[{\"userId\":1,\"name\":\"Jim Walker\"},{\"userId\":2,\"name\":\"Tim Cook\"}]";
     NSArray *friendArray = [dataJson objectFromJSONString];
     for (int i = 0; i < [friendArray count]; ++i) {
@@ -30,11 +31,11 @@ static NSMutableArray *allFriends;
     }
 }
 
-+ (NSMutableArray *)getFriends {
+- (NSMutableArray *)getFriends {
     return [allFriends subarrayWithRange:NSMakeRange(0, [allFriends count])];
 }
 
-+(NSUInteger) friendCount{
+- (NSUInteger)friendCount {
     return [allFriends count];
 }
 

@@ -7,7 +7,10 @@
 #import "Friend.h"
 
 
-@implementation FriendListController
+@implementation FriendListController{
+@private FriendManager *friendManager;
+};
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -15,10 +18,11 @@
     self.extendedLayoutIncludesOpaqueBars=NO;
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.modalPresentationCapturesStatusBarAppearance = NO;
+    friendManager = [[FriendManager alloc] init];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [FriendManager friendCount];
+    return [friendManager friendCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -30,7 +34,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
 
-    Friend *friend = [[FriendManager getFriends] objectAtIndex:indexPath.row];
+    Friend *friend = [[friendManager getFriends] objectAtIndex:indexPath.row];
     cell.textLabel.text = [friend name];
     return cell;
 }
