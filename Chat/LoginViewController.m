@@ -29,7 +29,7 @@
     //TODO login
 
     //Skip to friend list
-    FriendListController *flc = (FriendListController *)[self.storyboard instantiateViewControllerWithIdentifier:@"friendListController"];
+    FriendListController *flc = (FriendListController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabBarController"];
     flc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:flc animated:YES completion:nil];
 }

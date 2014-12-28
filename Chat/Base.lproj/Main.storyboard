@@ -200,10 +200,48 @@
                             </tableView>
                         </subviews>
                     </view>
+                    <tabBarItem title="联系人" id="gxS-gf-My1" key="tabBarItem">
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder" id="59C-ZY-g3x"/>
             </objects>
             <point key="canvasLocation" x="232" y="914"/>
+        </scene>
+        <scene sceneID="1Yl-6t-OUs">
+            <objects>
+                <tabBarController definesPresentationContext="YES" sceneMemberID="viewController" id="H7j-Bd-36S" storyboardIdentifier="mainTabBarController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar contentMode="scaleToFill" id="12x-UE-Qer" key="tabBar">
+                        <rect key="frame" x="0" y="519" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="I9p-2W-YKa" kind="relationship" relationship="viewControllers" id="2pM-aI-Hw1"/>
+                        <segue destination="vFB-cE-nDF" kind="relationship" relationship="viewControllers" id="J2V-tb-LZn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder" id="Ec9-91-4Mk"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="916"/>
+        </scene>
+        <scene sceneID="lIF-kc-USp">
+            <objects>
+                <viewController sceneMemberID="viewController" id="I9p-2W-YKa">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jAy-DM-xpa"/>
+                        <viewControllerLayoutGuide type="bottom" id="q62-D1-qpJ"/>
+                    </layoutGuides>
+                    <view contentMode="scaleToFill" id="2fc-Bv-A2w" key="view">
+                        <rect key="frame" x="0" y="0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem title="聊天" id="y2D-yg-OMP" key="tabBarItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder" id="F4A-uC-NYU"/>
+            </objects>
+            <point key="canvasLocation" x="1227" y="441"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
