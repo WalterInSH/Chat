@@ -9,8 +9,7 @@
 
 @implementation FriendListController{
 @private FriendManager *friendManager;
-};
-
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,12 +20,17 @@
     friendManager = [[FriendManager alloc] init];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [[[[friendManager getFriends] objectAtIndex:section] name] substringToIndex:1];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [friendManager friendCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    static NSString *simpleTableIdentifier = @"Cell";
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
 

@@ -1,0 +1,12 @@
+{
+  "friends": [
+    {
+      "userId": 1,
+      "name": "Tim Cook"
+    },
+    {
+      "userId": 2,
+      "name": "Jim Walker"
+    }
+  ]
+}

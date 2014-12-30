@@ -17,8 +17,9 @@ static const NSMutableArray *allFriends;
 
 
 - (void)loadFriendsFromServer {
-    NSString *dataJson = @"[{\"userId\":1,\"name\":\"Jim Walker\"},{\"userId\":2,\"name\":\"Tim Cook\"}]";
+    NSString *dataJson = @"";
     NSArray *friendArray = [dataJson objectFromJSONString];
+    NSMutableArray *remoteData = [[NSMutableArray alloc] init];
     for (int i = 0; i < [friendArray count]; ++i) {
         NSDictionary *friendDic = [friendArray objectAtIndex:i];
         int userId = [[friendDic objectForKey:@"userId"] intValue];
@@ -27,8 +28,11 @@ static const NSMutableArray *allFriends;
         Friend *friend = [[Friend alloc] init];
         friend.userId = userId;
         friend.name = name;
-        [allFriends addObject:friend];
+        [remoteData addObject:friend];
     }
+    [allFriends removeAllObjects];
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    [allFriends addObjectsFromArray:[remoteData sortedArrayUsingDescriptors:@[descriptor]]];
 }
 
 - (NSMutableArray *)getFriends {
@@ -37,6 +41,11 @@ static const NSMutableArray *allFriends;
 
 - (NSUInteger)friendCount {
     return [allFriends count];
+}
+
+- (BOOL)deleteFriendWithId:(NSInteger) friendId{
+
+    return FALSE;
 }
 
 @end

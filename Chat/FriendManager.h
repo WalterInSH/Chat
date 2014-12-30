@@ -14,4 +14,6 @@
 - (NSMutableArray *)getFriends;
 
 - (NSUInteger)friendCount;
+
+- (BOOL)deleteFriendWithId:(NSInteger)friendId;
 @end
