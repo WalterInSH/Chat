@@ -47,7 +47,7 @@ static const NSString *getFriendsApi;
 }
 
 - (NSMutableArray *)getFriends {
-    return [allFriends subarrayWithRange:NSMakeRange(0, [allFriends count])];
+    return [NSArray arrayWithArray:allFriends];
 }
 
 - (NSUInteger)friendCount {
