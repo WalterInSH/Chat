@@ -21,7 +21,6 @@
 		AA9C15CCB7278BB7EB156844 /* FriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1ED5B5F75448B6BC58F0 /* FriendListController.m */; };
 		AA9C17195A06871BF1A1FB20 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1C885CEAF556CC0F8532 /* Friend.m */; };
 		AA9C19632A050AD0DD23004F /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C12AD3321E36351576FF0 /* Configuration.m */; };
-		AA9C19C8056C2EEAFAF5AD7F /* apis.json in Resources */ = {isa = PBXBuildFile; fileRef = AA9C103AD7F0DC666FB26102 /* apis.json */; };
 		AA9C1AE9AAB057F2678D0771 /* FriendManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C19D2E918C694D120EF30 /* FriendManager.m */; };
 		AA9C1E573F75C0E27593279C /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9C19E1CAC395CF09BF6B5B /* app.plist */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		4B547C801A2ADDB50081A3E3 /* ChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTests.m; sourceTree = "<group>"; };
 		5F0592015AF8BEC6263DBFF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A73D2E767DFA51BA81CFD1AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		AA9C103AD7F0DC666FB26102 /* apis.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; name = apis.json; path = "json-server/apis.json"; sourceTree = "<group>"; };
 		AA9C10E8403714AD141F5173 /* FriendManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendManager.h; sourceTree = "<group>"; };
 		AA9C12AD3321E36351576FF0 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		AA9C149BE437FFD7C27CCC2D /* ConversasionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversasionController.m; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				4B547C621A2ADDB50081A3E3 /* Products */,
 				7BF1C229A159500305B0EDA8 /* Pods */,
 				2A71522D9CDF6120393C8875 /* Frameworks */,
-				AA9C103AD7F0DC666FB26102 /* apis.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,7 +269,6 @@
 				4B547C701A2ADDB50081A3E3 /* Main.storyboard in Resources */,
 				4B547C751A2ADDB50081A3E3 /* LaunchScreen.xib in Resources */,
 				4B547C721A2ADDB50081A3E3 /* Images.xcassets in Resources */,
-				AA9C19C8056C2EEAFAF5AD7F /* apis.json in Resources */,
 				AA9C1E573F75C0E27593279C /* app.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
