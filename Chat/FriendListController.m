@@ -20,11 +20,6 @@
     friendManager = [[FriendManager alloc] init];
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return [[[[friendManager getFriends] objectAtIndex:section] name] substringToIndex:1];
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [friendManager friendCount];
 }

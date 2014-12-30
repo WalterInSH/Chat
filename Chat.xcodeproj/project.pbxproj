@@ -20,8 +20,10 @@
 		AA9C11CBEED6082874533C90 /* ConversasionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C149BE437FFD7C27CCC2D /* ConversasionController.m */; };
 		AA9C15CCB7278BB7EB156844 /* FriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1ED5B5F75448B6BC58F0 /* FriendListController.m */; };
 		AA9C17195A06871BF1A1FB20 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1C885CEAF556CC0F8532 /* Friend.m */; };
+		AA9C19632A050AD0DD23004F /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C12AD3321E36351576FF0 /* Configuration.m */; };
 		AA9C19C8056C2EEAFAF5AD7F /* apis.json in Resources */ = {isa = PBXBuildFile; fileRef = AA9C103AD7F0DC666FB26102 /* apis.json */; };
 		AA9C1AE9AAB057F2678D0771 /* FriendManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C19D2E918C694D120EF30 /* FriendManager.m */; };
+		AA9C1E573F75C0E27593279C /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9C19E1CAC395CF09BF6B5B /* app.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,13 +59,16 @@
 		A73D2E767DFA51BA81CFD1AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA9C103AD7F0DC666FB26102 /* apis.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; name = apis.json; path = "json-server/apis.json"; sourceTree = "<group>"; };
 		AA9C10E8403714AD141F5173 /* FriendManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendManager.h; sourceTree = "<group>"; };
+		AA9C12AD3321E36351576FF0 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		AA9C149BE437FFD7C27CCC2D /* ConversasionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversasionController.m; sourceTree = "<group>"; };
 		AA9C19D2E918C694D120EF30 /* FriendManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendManager.m; sourceTree = "<group>"; };
+		AA9C19E1CAC395CF09BF6B5B /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = app.plist; sourceTree = "<group>"; };
 		AA9C1A3E143B0F7903C7DA1B /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		AA9C1C885CEAF556CC0F8532 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		AA9C1DC46C4B6B03677A23BB /* ConversasionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversasionController.h; sourceTree = "<group>"; };
 		AA9C1E272E6A6FC5E6EE7A26 /* FriendListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListController.h; sourceTree = "<group>"; };
 		AA9C1ED5B5F75448B6BC58F0 /* FriendListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListController.m; sourceTree = "<group>"; };
+		AA9C1F3FE10F3CB1755E1F98 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +142,8 @@
 				AA9C10E8403714AD141F5173 /* FriendManager.h */,
 				AA9C1C885CEAF556CC0F8532 /* Friend.m */,
 				AA9C1A3E143B0F7903C7DA1B /* Friend.h */,
+				AA9C12AD3321E36351576FF0 /* Configuration.m */,
+				AA9C1F3FE10F3CB1755E1F98 /* Configuration.h */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			children = (
 				4B547C651A2ADDB50081A3E3 /* Info.plist */,
 				4B547C661A2ADDB50081A3E3 /* main.m */,
+				AA9C19E1CAC395CF09BF6B5B /* app.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 				4B547C751A2ADDB50081A3E3 /* LaunchScreen.xib in Resources */,
 				4B547C721A2ADDB50081A3E3 /* Images.xcassets in Resources */,
 				AA9C19C8056C2EEAFAF5AD7F /* apis.json in Resources */,
+				AA9C1E573F75C0E27593279C /* app.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +333,7 @@
 				AA9C11CBEED6082874533C90 /* ConversasionController.m in Sources */,
 				AA9C1AE9AAB057F2678D0771 /* FriendManager.m in Sources */,
 				AA9C17195A06871BF1A1FB20 /* Friend.m in Sources */,
+				AA9C19632A050AD0DD23004F /* Configuration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
