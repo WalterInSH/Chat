@@ -18,6 +18,7 @@
 		4B547C751A2ADDB50081A3E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B547C731A2ADDB50081A3E3 /* LaunchScreen.xib */; };
 		4B547C811A2ADDB50081A3E3 /* ChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B547C801A2ADDB50081A3E3 /* ChatTests.m */; };
 		AA9C11CBEED6082874533C90 /* ConversasionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C149BE437FFD7C27CCC2D /* ConversasionController.m */; };
+		AA9C13CA6444FECB4FD74CCB /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1C0930F3D8D6C285F5CD /* SettingController.m */; };
 		AA9C15CCB7278BB7EB156844 /* FriendListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1ED5B5F75448B6BC58F0 /* FriendListController.m */; };
 		AA9C17195A06871BF1A1FB20 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C1C885CEAF556CC0F8532 /* Friend.m */; };
 		AA9C19632A050AD0DD23004F /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C12AD3321E36351576FF0 /* Configuration.m */; };
@@ -62,10 +63,12 @@
 		AA9C19D2E918C694D120EF30 /* FriendManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendManager.m; sourceTree = "<group>"; };
 		AA9C19E1CAC395CF09BF6B5B /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = app.plist; sourceTree = "<group>"; };
 		AA9C1A3E143B0F7903C7DA1B /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		AA9C1C0930F3D8D6C285F5CD /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		AA9C1C885CEAF556CC0F8532 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		AA9C1DC46C4B6B03677A23BB /* ConversasionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversasionController.h; sourceTree = "<group>"; };
 		AA9C1E272E6A6FC5E6EE7A26 /* FriendListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListController.h; sourceTree = "<group>"; };
 		AA9C1ED5B5F75448B6BC58F0 /* FriendListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListController.m; sourceTree = "<group>"; };
+		AA9C1F05FB6ECA1FA5FF9048 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		AA9C1F3FE10F3CB1755E1F98 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +144,8 @@
 				AA9C1A3E143B0F7903C7DA1B /* Friend.h */,
 				AA9C12AD3321E36351576FF0 /* Configuration.m */,
 				AA9C1F3FE10F3CB1755E1F98 /* Configuration.h */,
+				AA9C1C0930F3D8D6C285F5CD /* SettingController.m */,
+				AA9C1F05FB6ECA1FA5FF9048 /* SettingController.h */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				AA9C1AE9AAB057F2678D0771 /* FriendManager.m in Sources */,
 				AA9C17195A06871BF1A1FB20 /* Friend.m in Sources */,
 				AA9C19632A050AD0DD23004F /* Configuration.m in Sources */,
+				AA9C13CA6444FECB4FD74CCB /* SettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

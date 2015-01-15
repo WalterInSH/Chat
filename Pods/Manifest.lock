@@ -20,17 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - JSONKit (1.5pre)
   - MHTextField (0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
-  - JSONKit (= 1.5pre)
   - MHTextField (~> 0.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
-  JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
   MHTextField: f6db75bf005dd08e0f39e338c5098c834a25510f
 
 COCOAPODS: 0.35.0

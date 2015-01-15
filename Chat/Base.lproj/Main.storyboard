@@ -219,11 +219,12 @@
                     <connections>
                         <segue destination="I9p-2W-YKa" kind="relationship" relationship="viewControllers" id="2pM-aI-Hw1"/>
                         <segue destination="vFB-cE-nDF" kind="relationship" relationship="viewControllers" id="J2V-tb-LZn"/>
+                        <segue destination="foE-qL-LwV" kind="relationship" relationship="viewControllers" id="w3x-di-DB8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder" id="Ec9-91-4Mk"/>
             </objects>
-            <point key="canvasLocation" x="659" y="1015"/>
+            <point key="canvasLocation" x="672" y="934"/>
         </scene>
         <scene sceneID="lIF-kc-USp">
             <objects>
@@ -249,6 +250,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder" id="F4A-uC-NYU"/>
             </objects>
             <point key="canvasLocation" x="1227" y="441"/>
+        </scene>
+        <scene sceneID="6vC-EP-1el">
+            <objects>
+                <viewController sceneMemberID="viewController" id="foE-qL-LwV" customClass="SettingController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qOB-wT-fZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="6CV-IE-WR2"/>
+                    </layoutGuides>
+                    <view contentMode="scaleToFill" id="k1o-DD-sGg" key="view">
+                        <rect key="frame" x="0" y="0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8rV-Z6-HU7" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="25" y="50" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0" height="0"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <tabBarItem title="设置" id="GZa-7L-JIh" key="tabBarItem"/>
+                    <connections>
+                        <outlet property="avatar" destination="8rV-Z6-HU7" id="dxM-Tf-Sst"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder" id="kvS-hY-mpp"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="1782"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

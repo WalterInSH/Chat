@@ -4,7 +4,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONKit.h"
 
 
 @interface FriendManager : NSObject
